@@ -1,0 +1,734 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 280vh;
+    display: grid;
+    grid-template-rows: 0.8fr 7.2fr 2fr;
+    background:linear-gradient(to left, rgb(47, 40, 40) 20%, rgb(30, 28, 28) 80%);
+    position: relative;
+}
+/* header styling */
+.hero {
+    width:100%;
+    /* background-color: rgb(235, 22, 22); */
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.hero .logo {
+    width: 75px;
+    height: 75px;
+}
+.logo {
+   margin-left: 2rem;
+}
+.nav-section {
+    width: 45%;
+}
+.nav-section ul {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-section ul li {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: antiquewhite;
+}
+.nav-section ul li:hover {
+    color: rgb(107, 180, 253);
+}
+
+/* body styling */
+
+.class-div {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-template-rows: repeat(8, 1fr);
+    /* border: 5px solid blue;  */
+    height: 200vh;
+    width: 100%;
+    gap: 10px;
+    padding: 1rem;
+    
+}
+.btn1 {
+    border-radius: 0;
+    border: 0;
+    grid-column: 1;
+}
+.btn1 .sub-div1 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.sub-div1 {
+    background-image: url(assets/gitphoto7.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+}
+
+.sub-div1:hover p {
+    opacity: 1;
+}
+
+.sub-div1:hover  {
+    filter: blur(0);
+}
+.btn2 {
+    border-radius: 0;
+    border: 0;
+    grid-row: 1 /span 2;
+    grid-column: 2;
+}
+
+.btn2 .sub-div2 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+}
+.sub-div2 {
+    background-image: url(assets/gitphoto1.jpg);
+    background-position:right;
+    background-size: cover;
+    grid-row: 1 /span 2;
+    grid-column: 2;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div2:hover p {
+    opacity: 1;
+}
+.sub-div2:hover {
+    filter: blur(0);
+}
+
+.btn3 {
+    border-radius: 0;
+    border: 0;
+}
+.btn3 .sub-div3 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div3 {
+   background-image: url(assets/gitphoto8.jpeg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.sub-div3:hover p {
+    opacity: 1;
+}
+.sub-div3:hover {
+    filter: blur(0);
+}
+
+.btn4 {
+    border-radius: 0;
+    border: 0;
+}
+.btn4 .sub-div4 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div4 {
+    background-image: url(assets/gitphoto9.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div4:hover p {
+    opacity: 1;
+}
+.sub-div4:hover {
+    filter: blur(0);
+}
+
+.btn5 {
+    border-radius: 0;
+    border: 0;
+}
+.btn5 .sub-div5 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div5 {
+    background-image: url(assets/gitphoto10.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div5:hover p {
+    opacity: 1;
+}
+.sub-div5:hover {
+    filter: blur(0);
+}
+
+.btn6 {
+    border-radius: 0;
+    border: 0;
+}
+.btn6 .sub-div6 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div6 {
+    background-image: url(assets/gitphoto11.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div6:hover p {
+    opacity: 1;
+}
+.sub-div6:hover {
+    filter: blur(0);
+}
+
+.btn7 {
+    border-radius: 0;
+    border: 0;
+    grid-row: 3 /span 2;
+    grid-column: 2;
+}
+.btn7 .sub-div7 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div7 {
+    background-image: url(assets/gitphoto2.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 3 /span 2;
+    grid-column: 2;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-div7:hover p {
+    opacity: 1;
+}
+.sub-div7:hover {
+    filter: blur(0);
+}
+
+.btn8 {
+    border-radius: 0;
+    border: 0;
+}
+.btn8 .sub-div8 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div8 {
+   background-image: url(assets/gitphoto12.jpeg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div8:hover p {
+    opacity: 1;
+}
+.sub-div8:hover {
+    filter: blur(0);
+}
+
+.btn9 {
+    border-radius: 0;
+    border: 0;
+}
+.btn9 .sub-div9 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div9 {
+    background-image: url(assets/gitphoto13.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div9:hover p {
+    opacity: 1;
+}
+.sub-div9:hover {
+    filter: blur(0);
+}
+
+.btn10 {
+    border-radius: 0;
+    border: 0;
+}
+.btn10 .sub-div10 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div10 {
+    background-image: url(assets/gitphoto14.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div10:hover p {
+    opacity: 1;
+}
+.sub-div10:hover {
+    filter: blur(0);
+}
+
+.btn11 {
+    border-radius: 0;
+    border: 0;
+}
+.btn11 .sub-div11 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div11 {
+    background-image: url(assets/gitphoto15.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div11:hover p {
+    opacity: 1;
+}
+.sub-div11:hover {
+    filter: blur(0);
+}
+
+.btn12 {
+    border-radius: 0;
+    border: 0;
+    grid-row: 5 /span 2;
+    grid-column: 2;
+}
+.btn12 .sub-div12 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div12 {
+    background-image: url(assets/gitphoto3.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 5 /span 2;
+    grid-column: 2;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div12:hover p {
+    opacity: 1;
+}
+.sub-div12:hover {
+    filter: blur(0);
+}
+
+.btn13 {
+    border-radius: 0;
+    border: 0;
+}
+.btn13 .sub-div13 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div13 {
+   background-image: url(assets/gitphoto16.jpeg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div13:hover p {
+    opacity: 1;
+}
+.sub-div13:hover {
+    filter: blur(0);
+}
+
+.btn14 {
+    border-radius: 0;
+    border: 0;
+}
+.btn14 .sub-div14 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div14 {
+    background-image: url(assets/gitphoto17.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div14:hover p {
+    opacity: 1;
+}
+.sub-div14:hover {
+    filter: blur(0);
+}
+
+.btn15 {
+    border-radius: 0;
+    border: 0;
+}
+.btn15 .sub-div15 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div15 {
+    background-image: url(assets/gitphoto18.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div15:hover p {
+    opacity: 1;
+}
+.sub-div15:hover {
+    filter: blur(0);
+}
+
+.btn16 {
+    border-radius: 0;
+    border: 0;
+}
+.btn16 .sub-div16 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div16 {
+    background-image: url(assets/gitphoto19.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div16:hover p {
+    opacity: 1;
+}
+.sub-div16:hover {
+    filter: blur(0);
+}
+
+.btn17 {
+    border-radius: 0;
+    border: 0;
+    grid-row: 7 /span 2;
+    grid-column: 2;
+}
+.btn17 .sub-div17 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div17 {
+    background-image: url(assets/gitphoto4.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 7 /span 2;
+    grid-column: 2;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div17:hover p {
+    opacity: 1;
+}
+.sub-div17:hover {
+    filter: blur(0);
+}
+
+.btn18 {
+    border-radius: 0;
+    border: 0;
+}
+.btn18 .sub-div18 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div18 {
+   background-image: url(assets/gitphoto20.jpeg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div18:hover p {
+    opacity: 1;
+}
+.sub-div18:hover {
+    filter: blur(0);
+}
+
+.btn19 {
+    border-radius: 0;
+    border: 0;
+}
+.btn19 .sub-div19 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div19 {
+    background-image: url(assets/gitphoto5.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div19:hover p {
+    opacity: 1;
+}
+.sub-div19:hover {
+    filter: blur(0);
+}
+
+.btn20 {
+    border-radius: 0;
+    border: 0;
+}
+.btn20 .sub-div20 {
+    width: 100%;
+    height: 100%;
+    margin: 0; 
+}
+.sub-div20 {
+    background-image: url(assets/gitphoto6.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: blur(10px);
+    transition: 2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-div20:hover p {
+    opacity: 1;
+}
+.sub-div20:hover {
+    filter: blur(0);
+}
+
+/* footer styling */
+.feet .footer {
+    width:100%;
+    height:95%;
+    background-color: rgb(21, 20, 20);
+    text-align: center;
+    font-size: 14px;
+    color: rgb(231, 223, 208);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS'
+}
+.footer .fphoto {
+    padding-top: 10px;
+}
+.fphoto {
+    width: 100px;
+    height: 100px;
+}
+.small-body .sb {
+    padding-top: 1rem;
+}
+.bd {
+    color: rgb(157, 162, 165);
+}
+.small-clip .first {
+    padding-top: 1.2rem;
+}
+
+.icon {
+    display: inline-block;
+}
+.icon a:hover {
+   background-color: red;
+}
+
+.last {
+    font-size: 16px;
+    margin-top: 2rem;
+}
+
+/* paragraph 1st styling */
+
+p {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: 86px;
+    opacity: 0;
+    line-height: 1.4;
+    color: rgb(94, 52, 4);
+}
+p:before {
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: rgb(122, 205, 13);
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: 2s;
+}
+p:after {
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    transition: 2s;
+}
+
+p:hover::before, p:hover::after {
+    width: 86px;
+}
+
+/* paragraph 2nd styling */
+
+.p2 {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: 90px;
+    opacity: 0;
+    line-height: 1.4;
+    color: rgb(94, 52, 4);
+}
+.p2:before {
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: rgb(122, 205, 13);
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: 2s;
+}
+.p2:after {
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    transition: 2s;
+}
+
+.p2:hover::before, .p2:hover::after {
+    width: 90px;
+}
